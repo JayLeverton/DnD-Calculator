@@ -10,7 +10,7 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path="/DnD-Calculator/" element={<Home />}></Route>
-          <Route path="/DnD-Calculator/mining/" element={<Mining />}></Route>
+          <Route path="/DnD-Calculator/Mining/" element={<Mining />}></Route>
         </Routes>
       </HashRouter>
     </div>
