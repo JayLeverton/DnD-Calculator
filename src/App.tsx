@@ -1,4 +1,4 @@
-import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Mining } from "./pages/mining";
 import { Navbar } from "./components/Navbar";
@@ -6,13 +6,13 @@ import { Navbar } from "./components/Navbar";
 function App() {
   return (
     <div>
-      <HashRouter>
-        <Navbar></Navbar>
+      <Router>
+        <Navbar />
         <Routes>
-          <Route path="/DnD-Calculator/" element={<Home />}></Route>
-          <Route path="/DnD-Calculator/Mining/" element={<Mining />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/Mining" element={<Mining />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </div>
   );
 }
